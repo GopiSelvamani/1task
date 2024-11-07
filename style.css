@@ -1,0 +1,627 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Volkhov:wght@400;700&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", serif;
+}
+
+/* global */
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Start Nav Section */
+.nav-logo img {
+    width: 100%;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    color:#181E4B ;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    letter-spacing: 1px;
+    transition: all 1.3s ease;
+}
+.path{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    }
+path ul li a{
+    padding: 10px;
+    letter-spacing: 1px;
+    transition: all 1.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    left: 100px;
+}
+nav ul li a:hover{
+    color: rgb(12, 141, 33);
+}
+.explore{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    background-color: darkorange;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    box-shadow: lightblue;
+}
+.explore{
+    background-color: darkorange;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+    padding: 15px;
+}
+path img{
+    position:absolute;
+    padding: 10px;
+    width: 10%;
+    height: 10%;
+}
+label #open-btn{
+    color: rgb(16, 197, 173);
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    display: none;
+}
+#nav-check{
+    display: none;
+}
+.sign-btn{
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    background-color: darkorange;
+    font-size: 16px;
+    font-weight: 600;
+    color:white ;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    box-shadow: lightcyan;
+}
+.sign-btn:hover{
+    background-color: darkorange;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+    padding: 15px;
+}
+
+/* End Nav Section */
+
+/* Start Intro Section */
+.intro-bg{
+    background-image: url('#');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 600px 600px;
+}
+.intro-section{
+    display: flex;
+    align-items: center;
+    padding-top: 10px ;
+}
+.intro-small{
+    color: #181E4B;
+}
+.intro-text{
+    width: 60%;
+}
+.intro-text h2{
+    font-size: 65px;
+    color: #181E4B;
+    line-height: 75px;
+    margin: 7px 0;
+}
+.enjoy-bg{
+    position: relative;
+}
+.enjoy-bg::after{
+    content: url('#');
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 23%;
+    z-index: -1;
+}
+.intro-text p{
+    color: #181E4B;
+}
+.find-btn{
+    margin-top: 15px;
+    border: 2px;
+    outline: 5px;
+    border-radius: 6px;
+    padding: 15px;
+    color: darkorange;
+    background-color: white;
+    border-color: darkorange;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+    border-style: groove;
+}
+.find-btn:hover{
+    color: darkorange;
+    background-color: rgb(179, 220, 246);
+}
+.intro-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* End Intro Section */
+
+ /* Start Category Section  */
+ .category-bg {
+     background-image: url('./assets/fli.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px 150px;
+    margin-top: 90px;
+ }
+ 
+
+.category-section{
+    text-align: left;
+}
+.section-intro h1{
+    color: #181E4B;
+    font-size: 50px;
+    text-align: center;
+}
+.section-intro p{
+    color: #181E4B;
+    font-size: 20px;
+    text-align: center;
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.single-category {
+    cursor: pointer;
+    padding: 40px;
+    margin: 16px 10px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.02);
+    transition: all ease-in-out 0.5s;
+    background-image: url('./assets/Vector\ 4856.png');
+  }
+  .single-category:hover {
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.1);
+  }
+.single-category h3{
+    color: #181E4B; 
+    margin-top: 15px;
+}
+.single-category p{
+    color: #181E4B; 
+    margin-top: 10px;
+}
+.single-category img{
+   width: 100px;
+   height: 100px;
+}
+  /* End Category Section  */
+
+  /* Start Destination Section */
+  .destination-section{
+      margin-top: 90px;
+      text-align: center; 
+ }
+  .destination{
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+  }
+  .single-destination{
+      cursor: pointer;
+      margin: 10px 10px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 100px 80px rgba(0, 0, 0, 0.06);
+  }
+  .single-destination img{
+      width: 300px;
+      height: 200%;
+      margin-bottom: 5px;
+      object-fit: cover;
+  }
+  .single-destination p {
+    padding: 0 16px 16px;
+    color: #181E4B;
+  }
+  /* End Destination Section */
+
+  /* Start Partner Section */
+  .brands{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 60px;
+  }
+  .brands h1{
+    font-size: 50px;
+    text-align: center;
+  }
+  .brands p{
+    margin-top: 10px;
+  }
+  .container .brands{
+    text-align: center;
+  }
+  .brand img {
+      width: 100%;
+  }
+  /* End Partner Section */
+
+  /* Start Subscribe Section */
+.subscribe-bg{
+    background-image: url('images/bg-img/bg-decor-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100px 100px;
+}
+.subscribe-section{
+    margin-top: 50px;
+    text-align: center;
+}
+.subscribe{
+    background:rgb(245, 120, 3) no-repeat bottom left ;
+    padding: 80px;
+    border-radius: 20px;
+}
+.subscribe h2{
+    color: white;
+    width: 70%;
+    margin: auto;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+.input-group{
+    margin-top: 15px;
+}
+.subscribe-input{
+    border: 2px solid lightgray;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #181E4B;
+}
+.subscribe-btn{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 12px;
+    color: #181E4B;
+    background-color: orange;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+.subscribe-btn:hover{
+    background-color: rgb(241, 140, 216);
+    color: white;
+}
+  /* End Subscribe Section */
+
+  /* Start Footer Section */
+  .footer-section{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 100px 0;
+  }
+  .footer p {
+    margin-top: 10px;
+    color: #181E4B;
+    font-size: 17px;
+    
+  }
+  .copyright{
+      text-align: center;
+      color: #181E4B;
+      margin: 40px 0;
+      font-size: 17px;
+  }
+
+  .icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  .icon{
+    font-size: 30px;
+    padding: 0 13px;
+    color:rgb(179, 15, 91);
+    cursor: pointer;
+    transition: transform(all ease-in-out 1s);
+  }
+  .icon:hover{
+    color: rgb(248, 246, 250);
+    transform: scale(1.4);
+  }
+  /* End Footer Section */
+
+  /* Big laptop version */
+@media only screen and (max-width:1440px){
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+/* For Tablet */
+@media only screen and (max-width: 1024px) {
+    /* Global */
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+    .section-intro h1{
+        font-size: 35px;
+    }
+      /* Start Nav Section */
+      nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: black;
+        height: 100%;
+        width: 97%;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.6s ease;
+       
+    }
+    nav ul li {
+        margin: 15px 0;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 13px;
+    }
+    
+    label #open-btn{
+        display: block;
+    }
+    #nav-check:checked ~ ul{
+        left: 2%;
+    }
+    #nav-check:checked ~ label #open-btn:before{
+        content:"\f00d";
+    }
+    .sign-btn{
+        color: white;
+    }
+    /* end Nav Section */
+
+   /* start intro section */
+   .intro-section{
+    flex-direction: column-reverse;
+    }
+   .enjoy-bg::after{
+    width: 20%;
+   }
+   .intro-text h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 3px 0;
+   }
+   .intro-img img{
+    width: 80%;
+   } 
+   .intro-text{
+    margin-top: 30px;
+   }
+/* End Intro Section */
+
+/* start category section */
+    .category{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .category-bg {
+       background-size: 90px 90px;
+    }
+    /* end category section */
+
+    /* start destination section */
+    .destination{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .single-destination {
+      min-width: 400px;
+    }
+    /* end destination section */
+
+  /* Start Subscribe Section */
+    .subscribe-bg{
+    
+    background-size: 90px 90px;
+   }
+   .subscribe h2{  
+    width: 100%;
+   }
+ /* End Subscribe Section */
+
+/* Start Footer Section */
+    .footer-section{
+        flex-direction: column;   
+    }
+    .footer-logo{
+        margin-bottom: 12px;
+    }
+    .footer p {
+       margin-bottom: 10px;
+       font-size: 14px;
+     }
+    .copyright{
+       margin: 30px 0;
+       font-size: 14px;
+    }
+ 
+    .icons{
+      margin-top: 20px;
+    }
+    .icon{
+       font-size: 20px;
+       padding: 0 10px;
+    }
+    .icon:hover{
+       transform: scale(1.3);
+    } 
+ /* End Footer Section */
+}
+/* start at mobile version */
+@media only screen and (max-width: 600px){
+    
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section-intro h1{
+        font-size: 30px;
+    }
+    
+   /* start intro section */
+   .intro-section{
+        flex-direction: column-reverse;
+    }
+    .enjoy-bg::after{
+        width: 20%;
+    }
+    .intro-text h2{
+        font-size: 40px;
+        line-height: 50px;
+        margin: 4px 0;
+    }
+    .intro-img img{
+        width: 80%;
+    }
+    .intro-text{
+        margin-top: 30px;
+    }
+    .find-btn{
+        margin-top: 10px;;
+        padding: 13px;
+        margin: 3px 0;
+    } 
+    /* End Intro Section */
+    
+    /* Start Destination Section */
+ 
+    .single-destination{
+       margin: 5px 5px;  
+    }
+   .single-destination img{
+      width: 80%;
+      height: 340px;
+   }
+   .single-destination p {
+      padding: 0 12px 12px;
+    }
+/* End Destination Section */
+
+ /* Start Partner Section */
+    .brand img{
+        width: 80px;
+    }
+/* End Partner Section */
+
+    /* Start subscribe Section */
+    .subscribe-bg{
+        background-size: 50px 50px;
+    }
+    .subscribe h2{
+        width: 100%;
+        letter-spacing: 0;
+        font-size: 20px;
+    }
+    .input-group{
+        margin-top: 20px;
+    }
+    .subscribe-input{
+        margin-bottom: 10px;
+    }
+    /* End subscribe Section */
+   
+}
+
+/* Mini mobile */
+@media only screen and (max-width: 450px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .enjoy-bg::after{
+        width: 10%;
+    }
+    /* Start subscribe Section */
+    .subscribe h2{
+        font-size: 10px;
+    }
+    .subscribe-input{
+        padding: 6px;
+        font-size: 10px;
+    }
+    .subscribe-btn{
+        padding: 10px;
+        font-size: 11px;
+    }
+    /* End subscribe Section */
+    .brands{
+        flex-direction: column;
+    }
+
+}
